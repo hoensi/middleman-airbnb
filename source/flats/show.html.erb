@@ -1,14 +1,29 @@
----
-title: Le Wagon - Middleman
----
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
-  <div class="banner-content">
-    <h1>Le Wagon Berlin</h1>
-    <p>Learn to code with us in Berlin</p>
-    <a class="btn btn-primary btn-lg">Start now</a>
+<% flat = data.flats[owner] %>
+
+
+<!-- Inject flat data in template -->
+<%= image_tag "https://kitt.lewagon.com/placeholder/cities/#{"city_slug"}", class: "banner" %>
+
+<div class="flatcard">
+
+  <div class="flat-details">
+    <div class="flat-owner text-center">
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img" %>
+      <p><%= flat.name %></p>
+    </div>
+    <div class="flat-descrition">
+      <h1><%= flat.description %></h1>
+      <p><%= flat.city_name %></p>
+      <div class="rating">
+      <% flat.rating.times do %>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      <% end %>
+      </div>
+    </div>
   </div>
 </div>
 
+<!--
 <div class="container" id="home-flats">
   <h2 class="text-center">Recent flats</h2>
   <div class="row">
@@ -27,3 +42,4 @@ title: Le Wagon - Middleman
     <% end %>
   </div>
 </div>
+ -->

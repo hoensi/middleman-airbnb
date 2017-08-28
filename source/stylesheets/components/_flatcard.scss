@@ -1,0 +1,43 @@
+.flatcard {
+  width: 50%;
+  height: 150px;
+  background-color: white;
+  color: black;
+  position: relative;
+  align-items: center;
+
+.flat-details {
+display: flex;
+align-items: center;
+.flat-owner {
+padding-top: 10px;
+padding-left: 10px;
+font-size: 10px;
+font-weight: lighter;
+  img {
+    border-radius: 50%;
+    width: 80px;
+  }
+}
+}
+.flat-descrition {
+padding-left: 10px;
+  h1 {
+    padding-top: 10px;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  p {
+    color: grey;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .rating {
+  margin: 0px;
+  padding: 0px;
+  }
+
+}
+}
+
